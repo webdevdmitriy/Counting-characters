@@ -1,0 +1,45 @@
+.container {
+	max-width: 1325px;
+	margin: 0 auto;
+}
+
+.content {
+	text-align: center;
+}
+
+table {
+	border: 1px solid grey;
+}
+/* границы ячеек первого ряда таблицы */
+th {
+	border: 1px solid grey;
+}
+/* границы ячеек тела таблицы */
+td {
+	border: 1px solid grey;
+}
+
+.content {
+	display: flex;
+	margin-left: -10px;
+	margin-right: -10px;
+}
+.textarea1,
+.textarea2 {
+	width: 100%;
+	height: 50vh;
+	resize: none;
+}
+
+.content-block {
+	width: 50%;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.table {
+	margin-top: 50px;
+}
+.addData {
+	margin-bottom: 20px;
+}

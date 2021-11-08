@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="stylesheet" href="style.css"/>
+		<title>Количество символов</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="content">
+				<div class="content-block">
+					<h2>Исходный текст</h2>
+					<textarea class="textarea1" name="" id="" cols="30" rows="10">kjkljlkjl </textarea>
+				</div>
+				<div class="content-block">
+					<h2>Текст без пробелов и переносов</h2>
+					<textarea class="textarea2" disabled="disabled id="" cols="30" rows="10">kjkljlkjl </textarea>
+				</div>
+			</div>
+			<div class="result">
+				<p class="result-one">Кол-во символов: <span></span></p>
+				<p class="result-two">Кол-во символов без пробелов: <span></span></p>
+			</div>
+
+			<div class="table">
+				<button class="addData">Добавить данные</button>
+				<table>
+					<tr>
+						<th>Название текста/th></th>
+						<th>Кол-во символов с пробелами</th>
+						<th>Кол-во символов без пробелов</th>
+					</tr>
+					<!--ряд с ячейками заголовков-->
+					<tr></tr>
+					<!--ряд с ячейками тела таблицы-->
+				</table>
+			</div>
+		</div>
+
+		<script src="/script.js"></script>
+	</body>
+</html>
