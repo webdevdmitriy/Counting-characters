@@ -1,6 +1,11 @@
+.body {
+
+}
+
 .container {
 	max-width: 1325px;
 	margin: 0 auto;
+	position: relative;
 }
 
 .content {
@@ -42,4 +47,30 @@ td {
 }
 .addData {
 	margin-bottom: 20px;
+}
+
+
+.modal {
+	opacity: 0;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 50px;
+	border: 1px solid black;
+	text-align: center;
+	background-color: aqua;
+	
+}
+
+.animation {
+	opacity: 1;
+	animation: cssAnimation 0.5s ease-in 1s forwards;
+}
+
+
+@keyframes cssAnimation {
+to {
+	opacity: 0;
+}
 }
