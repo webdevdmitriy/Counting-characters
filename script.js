@@ -4,6 +4,8 @@ const textarea2 = document.querySelector('.textarea2')
 const resultOne = document.querySelector('.result-one span')
 const resultTwo = document.querySelector('.result-two span')
 
+const clipboardStatus = document.querySelector('.clipboard-status span')
+
 let res1 = ''
 let res2 = ''
 
@@ -161,3 +163,17 @@ btnShow.addEventListener('click', function () {
       ? 'Скрыть получившийся текст'
       : 'Показать получившийся текст'
 })
+
+// Проверка того что находится в буфере обмена
+setInterval(() => {
+  let [numChar] = countChar()
+  navigator.clipboard.readText().then(text => {
+    if (text == numChar && numChar != 0) {
+      clipboardStatus.textContent = 'кол-во символов'
+    } else if (text.length == 0) {
+      clipboardStatus.textContent = 'пусто'
+    } else {
+      clipboardStatus.textContent = 'какой-то текст'
+    }
+  })
+}, 1000)
