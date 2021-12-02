@@ -1,5 +1,5 @@
-const textarea1 = document.querySelector('.content .textarea1')
-const textarea2 = document.querySelector('.content .textarea2')
+const textarea1 = document.querySelector('.textarea1')
+const textarea2 = document.querySelector('.textarea2')
 
 const resultOne = document.querySelector('.result-one span')
 const resultTwo = document.querySelector('.result-two span')
@@ -148,3 +148,16 @@ function clipboardWrite() {
       })
   })
 }
+
+const btnShow = document.querySelector('#btn-show')
+const textResult = document.querySelector('.text-result')
+
+btnShow.addEventListener('click', function () {
+  textResult.style.display =
+    textResult.style.display == 'block' ? 'none' : 'block'
+
+  this.innerHTML =
+    textResult.style.display == 'block'
+      ? 'Скрыть получившийся текст'
+      : 'Показать получившийся текст'
+})
